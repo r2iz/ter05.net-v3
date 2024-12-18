@@ -9,7 +9,7 @@ export default function Contact() {
             <div className="max-w-lg ">
                 <div className="space-y-4">
                     <a
-                        href="https://x.com/Pz2Or"
+                        href="https://x.com/Pz2Or_"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 transition-colors"
