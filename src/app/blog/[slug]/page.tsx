@@ -20,6 +20,18 @@ import {
     CustomImg,
 } from "@/components/custom-components";
 
+export async function generateMetadata(props: {
+    params: Promise<{ slug: string }>;
+}) {
+    const params = await props.params;
+    const post = getPostBySlug(params.slug);
+
+    return {
+        title: post.meta.title,
+        description: post.meta.excerpt,
+    };
+}
+
 export async function generateStaticParams() {
     const posts = getAllPosts();
     return posts.map((post) => ({
