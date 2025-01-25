@@ -12,7 +12,7 @@ import { ExternalLink } from "lucide-react";
 import { summaly } from "@misskey-dev/summaly";
 
 interface CustomLinkProps
-    extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    extends Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "href"> {
     href: string;
 }
 
