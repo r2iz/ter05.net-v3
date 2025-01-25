@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 interface CustomComponentProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 export const CustomH1 = ({ children }: CustomComponentProps) => (
